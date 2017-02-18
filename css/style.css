@@ -43,7 +43,9 @@ li a{
     font-size: 30px;
 }
 #tabs-list{
-	width:15%;
+	display: table;
+    margin: 0 auto;
+    width: 0%;
 }
 
 #header-container{
