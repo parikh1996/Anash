@@ -33,6 +33,14 @@ li a{
 
 #footer{
 	width: 100%;
+	margin-top:10px;
+}
+
+#fbinsta{
+	color:#fff;
+	float: right;
+    margin-right: 11px;
+    font-size: 30px;
 }
 #tabs-list{
 	width:15%;
