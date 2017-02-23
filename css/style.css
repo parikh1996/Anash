@@ -10,12 +10,33 @@ body{
 	background:#fff;
 	font-family: 'Lato', sans-serif;
  }
+
 body a{
 	transition:0.5s all;
 	-webkit-transition:0.5s all;
 	-moz-transition:0.5s all;
 	-o-transition:0.5s all;
 	-ms-transition:0.5s all;
+}
+.currency #whatsapp{
+	display: none;
+}
+.currency #call{
+	display: none;
+}
+.cart-sec li:nth-child(1):before{
+   content: "\f232"; /* FontAwesome Unicode */
+  font-family: FontAwesome;
+  display: inline-block;
+  margin-left: -1.3em; /* same as padding-left set on li */
+  width: 1.3em; /* same as padding-left set on li */
+}
+.cart-sec li:nth-child(2):before{
+   content: "\f095"; /* FontAwesome Unicode */
+  font-family: FontAwesome;
+  display: inline-block;
+  margin-left: -1.3em; /* same as padding-left set on li */
+  width: 1.3em; /* same as padding-left set on li */
 }
 h1,h2,h3,h4,h5,h6{
 	margin:0;			   
@@ -125,7 +146,7 @@ width: 18px;
 height: 18px;
 color: #fff;
 font-size :18px;
-display: inline-block;
+display: none;
 }
 .currency #call
 {position: absolute;
@@ -135,7 +156,7 @@ width: 18px;
 height: 18px;
 color: #fff;
 font-size :18px;
-display: inline-block;
+display: none;
 }
 a i.c1{
 background-position: 0px 0px;
@@ -1872,7 +1893,7 @@ width: 92.7%;
     height: 18px;
     color: #fff;
     font-size: 14px;
-    display: inline-block;
+    display: none;
 }
 
 .currency #call{
@@ -1883,7 +1904,7 @@ width: 92.7%;
     height: 18px;
     color: #fff;
     font-size: 13px;
-    display: inline-block;
+    display: none;
 }
 
 #options-bar{
