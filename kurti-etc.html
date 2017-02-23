@@ -27,6 +27,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#sort').click(function() {
+            var items = $(".fashion-grid").sort(function(a, b) {
+                var priceAText = $(a).find("p").text();
+                var priceBText = $(b).find("p").text();
+                priceA = parseInt(priceAText.substr(3));
+                priceB = parseInt(priceBText.substr(3));
+                return (priceA < priceB) ? -1 : (priceA > priceB) ? 1 : 0;
+            });
+            $(".fashions").append(items);
+            $(".fashion-section").remove();
+        });
+    });
+</script>
+
 </head>
 <body>
 <!---->
@@ -317,6 +333,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						
 				  </ul>
 			  </div>
+			  <button id="sort">SORT</button>
 			  <div class="sales">
 				 <h3>SALE</h3>
 				 <div class="pricing">
