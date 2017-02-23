@@ -1834,6 +1834,36 @@ width: 92.7%;
 }
 @media (max-width: 480px){
 
+	#tabs-list{
+		display: none;
+	}
+	#footer-container{
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+	}
+	#footer{
+		height: 77px;
+	}
+	.fashion-grid{
+		float: none;
+		width: 65%;
+	}
+	.fashion-grid:nth-child(3)
+	{
+		display: block;
+	}
+
+	.men-fashions .container{
+		margin: 0 10% 0 10%;
+	}
+	.about-text p{
+		height: 100%;
+	}
+	.term p {
+		height: 100%;
+	}
+
 .currency #whatsapp{
 	position: absolute;
     top: 57%;
@@ -2042,7 +2072,7 @@ font-size: 1.3em;
 }
 .term p {
 overflow: hidden;
-height: 65px;
+
 }
 .term h4 {
 font-size: 1.1em;
