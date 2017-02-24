@@ -1,0 +1,357 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Shopper an E-Commerce online Shopping Category Flat Bootstarp responsive Website Template| Woman :: w3layouts</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/font-awesome-4.7.0/css/font-awesome.css" rel='stylesheet' type='text/css' />
+<link href="css/font-awesome-4.7.0/css/font-awesome.min.css" rel='stylesheet' type='text/css' />
+<link href="css/font-awesome-4.7.0/css/font-awesome.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Custom Theme files -->
+<link href="css/hover.css" rel="stylesheet" media="all">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Shopper Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--webfont-->
+<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#sort').click(function() {
+            var items = $(".fashion-grid").sort(function(a, b) {
+                var priceAText = $(a).find("p").text();
+                var priceBText = $(b).find("p").text();
+                priceA = parseInt(priceAText.substr(3));
+                priceB = parseInt(priceBText.substr(3));
+                return (priceA < priceB) ? -1 : (priceA > priceB) ? 1 : 0;
+            });
+            $(".fashions").append(items);
+            $(".fashion-section").remove();
+        });
+    });
+</script>
+
+</head>
+<body>
+<!---->
+<div class="header">
+	 <div class="container" id="header-container">
+		 <div class="header-left">
+			 <div class="top-menu">
+				 <ul>
+				 <li ><a href="index.html">HOME</a></li>
+				 <li><a href="woman-kurti.html">WOMEN</a></li>
+				 <li><a href="man-tshirt.html">MEN</a></li>
+				 <li><a href="kids.html">KIDS</a></li>			 
+				 </ul>
+
+				 <!-- script-for-menu -->
+				 <script>
+						$("span.menu").click(function(){
+							$(".top-menu ul").slideToggle("slow" , function(){
+							});
+						});
+				 </script>
+				 <!-- script-for-menu -->	 	 
+
+			 </div>
+		 </div>
+
+		<div class="logo">
+			 <a href="index.html"><img id="logo-image"src="images/whitelogo.png" alt=""/></a>
+		 </div>
+		 <div class="header-right">
+			 <div class="currency">			 
+				 <i id="whatsapp" class="fa fa-whatsapp" aria-hidden="true"></i> 
+				 <i id="call" class="fa fa-phone" aria-hidden="true"></i>
+
+			</div>
+
+			 <div class="signin">
+				  <div class="cart-sec">
+				  <ul style="list-style:none">
+				     <li>WHATSAPP - +919582343569</li>
+					 <li>CALL - +919310057245</li>
+				  </ul>
+				 </div>		 
+			 </div>
+		 </div>
+		 <div class="clearfix"></div>
+	 </div>
+</div>
+
+<!---->
+<div class="men-fashions">
+	 <div class="container">		 
+		 <div class="col-md-9 fashions">
+			 <div class="title">
+				 <h3>Kurtis (Rayon, Silk and others)</h3>
+			 </div>
+			 <div class="fashion-section">
+				 <div class="fashion-grid1">
+					 <div class="col-md-4 fashion-grid">
+						 <a href="kurti-etc-1.html"><img src="images/women/kurtis/COTSILK1.png" alt=""/>
+							 <div class="product">
+								 <h3>Designer Cotton Silk Kurti</h3>
+								 <p><span></span>Rs.699/-</p>								 
+							 </div>							 
+						 </a>
+						 <div class="fashion-view"><span></span>
+									<div class="clearfix"></div>
+								 <h4><a href="kurti-etc-1.html">Quick View</a></h4>
+						 </div>
+					 </div>
+                     <div class="col-md-4 fashion-grid">
+						 <a href="kurti-etc-2.html"><img src="images/women/kurtis/RAYON12.png" alt=""/>
+							 <div class="product">
+								 <h3>Designer Rayon Kurti</h3>
+								 <p><span></span>Rs.699/-</p>								 
+							 </div>							 
+						 </a>
+						 <div class="fashion-view"><span></span>
+									<div class="clearfix"></div>
+								 <h4><a href="kurti-etc-2.html">Quick View</a></h4>
+						 </div>
+					 </div>
+                     <div class="col-md-4 fashion-grid">
+						 <a href="kurti-etc-3.html"><img src="images/women/kurtis/RAYON21.png" alt=""/>
+							 <div class="product">
+								 <h3>Designer Rayon Kurti</h3>
+								 <p><span></span>Rs.599/-</p>								 
+							 </div>							 
+						 </a>
+						 <div class="fashion-view"><span></span>
+									<div class="clearfix"></div>
+								 <h4><a href="kurti-etc-3.html">Quick View</a></h4>
+						 </div>
+					 </div>
+					 <div class="clearfix"></div>
+				 </div>
+				 <div class="fashion-grid2">
+                    <div class="col-md-4 fashion-grid">
+						 <a href="kurti-etc-4.html"><img src="images/women/kurtis/RAYON31.png" alt=""/>
+							 <div class="product">
+								 <h3>Designer Rayon Kurti</h3>
+								 <p><span></span>Rs.599/-</p>								 
+							 </div>							 
+						 </a>
+						 <div class="fashion-view"><span></span>
+									<div class="clearfix"></div>
+								 <h4><a href="kurti-etc-4.html">Quick View</a></h4>
+						 </div>
+					 </div>
+
+					 <div class="col-md-4 fashion-grid">
+						 <a href="kurti-etc-5.html"><img src="images/women/kurtis/RAYON41.png" alt=""/>
+							 <div class="product">
+								 <h3>Designer Rayon Kurti</h3>
+								 <p><span></span>Rs.599/-</p>								 
+							 </div>							 
+						 </a>
+						 <div class="fashion-view"><span></span>
+									<div class="clearfix"></div>
+								 <h4><a href="kurti-etc-5.html">Quick View</a></h4>
+						 </div>
+					 </div>
+
+					 <div class="col-md-4 fashion-grid">
+						 <a href="kurti-etc-6.html"><img src="images/women/kurtis/RAYON51.png" alt=""/>
+							 <div class="product">
+								 <h3>Designer Rayon Kurti</h3>
+								 <p><span></span>Rs.599/-</p>								 
+							 </div>							 
+						 </a>
+						 <div class="fashion-view"><span></span>
+									<div class="clearfix"></div>
+								 <h4><a href="kurti-etc-6.html">Quick View</a></h4>
+						 </div>
+					 </div>
+
+					 <div class="clearfix"></div>
+				 </div>
+
+				 <div class="fashion-section">
+				 <div class="fashion-grid1">
+					 <div class="col-md-4 fashion-grid">
+						 <a href="kurti-etc-7.html"><img src="images/women/kurtis/RAYON61.png" alt=""/>
+							 <div class="product">
+								 <h3>Designer Rayon Kurti</h3>
+								 <p><span></span>Rs.599/-</p>								 
+							 </div>							 
+						 </a>
+						 <div class="fashion-view"><span></span>
+									<div class="clearfix"></div>
+								 <h4><a href="kurti-etc-7.html">Quick View</a></h4>
+						 </div>
+					 </div>
+                     <div class="col-md-4 fashion-grid">
+						 <a href="kurti-etc-8.html"><img src="images/women/kurtis/RAYON71.png" alt=""/>
+							 <div class="product">
+								 <h3>Designer Rayon Kurti</h3>
+								 <p><span></span>Rs.599/-</p>								 
+							 </div>							 
+						 </a>
+						 <div class="fashion-view"><span></span>
+									<div class="clearfix"></div>
+								 <h4><a href="kurti-etc-8.html">Quick View</a></h4>
+						 </div>
+					 </div>
+                     <div class="col-md-4 fashion-grid">
+						 <a href="kurti-etc-9.html"><img src="images/women/kurtis/RAYON81.png" alt=""/>
+							 <div class="product">
+								 <h3>Designer Rayon Kurti</h3>
+								 <p><span></span>Rs.599/-</p>								 
+							 </div>							 
+						 </a>
+						 <div class="fashion-view"><span></span>
+									<div class="clearfix"></div>
+								 <h4><a href="kurti-geor-9.html">Quick View</a></h4>
+						 </div>
+					 </div>
+					 <div class="clearfix"></div>
+					 </div>
+					 <div class="fashion-section">
+				 <div class="fashion-grid1">
+					 <div class="col-md-4 fashion-grid">
+						 <a href="kurti-etc-10.html"><img src="images/women/kurtis/RAYON91.png" alt=""/>
+							 <div class="product">
+								 <h3>Designer Rayon Kurti</h3>
+								 <p><span></span>Rs.599/-</p>								 
+							 </div>							 
+						 </a>
+						 <div class="fashion-view"><span></span>
+									<div class="clearfix"></div>
+								 <h4><a href="kurti-etc-10.html">Quick View</a></h4>
+						 </div>
+					 </div>
+                     <div class="col-md-4 fashion-grid">
+						 <a href="kurti-geor-11.html"><img src="images/women/kurtis/GEOR112.png" alt=""/>
+							 <div class="product">
+								 <h3>Designer Georgette Kurti</h3>
+								 <p><span></span>Rs.799/-</p>								 
+							 </div>							 
+						 </a>
+						 <div class="fashion-view"><span></span>
+									<div class="clearfix"></div>
+								 <h4><a href="kurti-geor-11.html">Quick View</a></h4>
+						 </div>
+					 </div>
+                     <div class="col-md-4 fashion-grid">
+						 <a href="kurti-geor-12.html"><img src="images/women/kurtis/GEOR122.png" alt=""/>
+							 <div class="product">
+								 <h3>Designer Georgette Kurti</h3>
+								 <p><span></span>Rs.799/-</p>								 
+							 </div>							 
+						 </a>
+						 <div class="fashion-view"><span></span>
+									<div class="clearfix"></div>
+								 <h4><a href="kurti-geor-12.html">Quick View</a></h4>
+						 </div>
+					 </div>
+					 </div>
+					 <div class="clearfix"></div>
+					 </div>
+					 <div class="fashion-section">
+				 <div class="fashion-grid1">
+					 <div class="col-md-4 fashion-grid">
+						 <a href="kurti-geor-13.html"><img src="images/women/kurtis/GEOR132.png" alt=""/>
+							 <div class="product">
+								 <h3>Designer Georgette Kurti</h3>
+								 <p><span></span>Rs.799/-</p>								 
+							 </div>							 
+						 </a>
+						 <div class="fashion-view"><span></span>
+									<div class="clearfix"></div>
+								 <h4><a href="kurti-geor-13.html">Quick View</a></h4>
+						 </div>
+					 </div>
+                     <div class="col-md-4 fashion-grid">
+						 <a href="kurti-geor-11.html"><img src="images/women/kurtis/GEOR112.png" alt=""/>
+							 <div class="product">
+								 <h3>Designer Georgette Kurti</h3>
+								 <p><span></span>Rs.799/-</p>								 
+							 </div>							 
+						 </a>
+						 <div class="fashion-view"><span></span>
+									<div class="clearfix"></div>
+								 <h4><a href="kurti-geor-11.html">Quick View</a></h4>
+						 </div>
+					 </div>
+                     <div class="col-md-4 fashion-grid">
+						 <a href="kurti-geor-12.html"><img src="images/women/kurtis/GEOR122.png" alt=""/>
+							 <div class="product">
+								 <h3>Designer Georgette Kurti</h3>
+								 <p><span></span>Rs.799/-</p>								 
+							 </div>							 
+						 </a>
+						 <div class="fashion-view"><span></span>
+									<div class="clearfix"></div>
+								 <h4><a href="kurti-geor-12.html">Quick View</a></h4>
+						 </div>
+					 </div>
+					 <div class="clearfix"></div>
+					 </div>
+				 
+					 <div class="clearfix"></div>
+				 </div>
+
+
+
+
+
+
+					 
+					 
+					 <div class="clearfix"></div>
+				 </div>
+			 </div>
+		 </div>
+		 <div class="col-md-3 side-bar">
+			  <div class="categories">
+					<h3>Itmes on Sale</h3>
+				  <ul>
+						
+						
+				  </ul>
+			  </div>
+			  <button id="sort">SORT</button>
+			  <div class="sales">
+				 <h3>SALE</h3>
+				 <div class="pricing">
+					 <h4>Price range</h4>
+					 <input type="text" placeholder="price from" required/>
+					 <input type="text" placeholder="price to" required/>
+					 <div class="clearfix"></div>
+				 </div>
+				 <div class="size">
+					 <h4>Size</h4>
+					 <ul>
+						 <li><a href="#">XS</a></li>
+						 <li><a href="#">S</a></li>
+						 <li><a href="#">M</a></li>
+						 <li><a href="#">L</a></li>
+						 <li><a href="#">XL</a></li>
+					 </ul>
+				 </div>
+			  </div>
+		 </div>
+		 <div class="clearfix"></div>
+	 </div>
+</div>
+<!---->
+<object id="footer" type="text/html" data="footer.html"></object>
+<!---->		
+</body>
+</html>
