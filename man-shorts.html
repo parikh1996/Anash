@@ -76,6 +76,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		 <div class="clearfix"></div>
 	 </div>
 </div>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#sort').click(function() {
+            var items = $(".fashion-grid").sort(function(a, b) {
+                var priceAText = $(a).find("p").text();
+                var priceBText = $(b).find("p").text();
+                priceA = parseInt(priceAText.substr(3));
+                priceB = parseInt(priceBText.substr(3));
+                return (priceA < priceB) ? -1 : (priceA > priceB) ? 1 : 0;
+            });
+            $(".fashions").append(items);
+            $(".fashion-section").remove();
+        });
+    });
+</script>
 <!---->
 <div class="men-fashions">
 	 <div class="container">		
