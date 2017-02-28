@@ -137,6 +137,9 @@
                         }
                         //Trigger tab activation event
                         $currentTab.trigger('tabactivate', $currentTab);
+
+
+                        $('#tabs-list li')[0].addClass('resp-tab-active');
                         
                         //Update Browser History
                         if(historyApi) {
@@ -160,6 +163,10 @@
                     });
                     
                 });
+
+                
+                            
+                        
                 
                 //Window resize function                   
                 $(window).resize(function () {
