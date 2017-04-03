@@ -18,6 +18,15 @@ body a{
 	-o-transition:0.5s all;
 	-ms-transition:0.5s all;
 }
+
+#new-button{
+	margin-top: -8px;
+    color: orange;
+    font-weight: 700;
+}
+#types{
+	display: flex;
+}
 #sort{
 	background-color: black;
 }
