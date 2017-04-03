@@ -27,6 +27,12 @@ body a{
 #types{
 	display: flex;
 }
+#deleted-price{
+	float: none;
+}
+#actual-price{
+	float: right;
+}
 #sort{
 	background-color: black;
 }
